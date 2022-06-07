@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
     <head>
@@ -20,7 +19,7 @@
         <!-- Compiled and minified JavaScript -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-        <title>Laura Around the World</title>
+        <title>Homepage</title>
         <style>
             * {
                 vertical-align: baseline;
@@ -137,7 +136,6 @@
                 position: absolute;
                 left: 160px;
                 top: 66px;
-                c
             }
 
             #close {
@@ -146,26 +144,6 @@
                 top: 8px;
                 right: 8px;
                 cursor: pointer;
-            }
-
-            #info-card {
-                background: #498ECF;
-            }
-
-            #menu-list {
-                background: #498ECF;
-            }
-
-            #about-card {
-                background: #498ECF;
-            }
-
-            a {
-                color: #E5C386 !important;
-            }
-
-            #demo {
-
             }
 
         </style>
@@ -181,7 +159,7 @@
                 <img src="wereldlogo.png" />
                 <a id="about" onclick="triggerAbout()" class="waves-effect waves-light btn">About us</a>
                 <div class="col" style="height: calc(100% - 104px);">
-                    <div class="card" id="menu-list">
+                    <div class="card blue-grey darken-1">
                         <div class="card-content white-text">
                             <span class="card-title">Laura Around the World</span>
                             <ul>
@@ -189,7 +167,7 @@
                         </div>
                     </div>
 
-                    <div class="card hidden" id="info-card">
+                    <div class="card blue-grey darken-1 hidden" id="info-card">
                         <i onclick="triggerAbout1()" class="material-icons" id="close">close</i>
 
                         <div class="card-content white-text">
@@ -215,15 +193,15 @@
 
             <div class="row" style="flex: 1.5;">
                 <div class="col">
-                    <div class="card hidden" id="about-card">
+                    <div class="card blue-grey darken-1 hidden" id="about-card">
                         <i onclick="triggerAbout()" class="material-icons" id="close">close</i>
             
                         <div class="card-content white-text">
                             <span class="card-title">About</span>
-                            <p id="quote">Hi! I’m Laura Burns, a 23 year old Romanian-American student taking a gap year in between my Bachelors and Masters. I recently finished my bachelors in Media Studies at University of Groningen and decided to embark on a journey inspired from Around the World in 80 days by Jules Verne. This passion project stemmed from my drive to travel and my devotion for reading adventure books. With the help of BIS Publishers  that believed in my story, I will be able to share everything with you.</p>
+                            <p id="quote">Dit gaat over ons en alleen ons.</p>
                             <br>
                             <span class="card-title">Contact</span>
-                            <p id="quote">@instagram - l_around_the_world </br>@soundcloud - Laura Around the World</p>
+                            <p id="quote">Dit gaat over ons en alleen ons.</p>
                         </div>
                         <div class="card-action">
                             <a href="mailto:laura80days@gmail.com">Email us</a>
@@ -231,42 +209,7 @@
                     </div>
                 </div>
             </div>
-
-            <div class="row" style="flex: .5">
-                        <!-- Display the countdown timer in an element -->
-            <p id="demo"></p>
-
-            <script>
-                // Set the date we're counting down to
-                var countDownDate = new Date("June 15, 2022 15:37:25").getTime();
-
-                // Update the count down every 1 second
-                var x = setInterval(function() {
-
-                // Get today's date and time
-                var now = new Date().getTime();
-
-                 // Find the distance between now and the count down date
-                 var distance = countDownDate - now;
-
-              // Time calculations for days, hours, minutes and seconds
-                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-                  // Display the result in the element with id="demo"
-                  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-                  + minutes + "m " + seconds + "s ";
-
-                  // If the count down is finished, write some text
-                  if (distance < 0) {
-                    clearInterval(x);
-                    document.getElementById("demo").innerHTML = "EXPIRED";
-                  }
-                }, 1000);
-                </script>
-            </div>
+                        
         </div>
 
         <script type="text/javascript" src="script.js"></script>
